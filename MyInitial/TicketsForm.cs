@@ -32,8 +32,8 @@ namespace Ticketing
 
             if (chkDiscounts.Checked)
                 { mDiscount = true; }
-            if (chkDiscountc.Checked)
-                { mDiscount = true; }
+            //if (chkDiscountc.Checked)
+            //    { mDiscount = true; }
 
             if (radBalcony.Checked)
                 { mSection = 1; }
@@ -41,6 +41,8 @@ namespace Ticketing
                 { mSection = 2; }
             if (radBox.Checked)
                 { mSection = 3; }
+            if (radBox.Checked)
+                { mSection = 4; }
 
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount);
 

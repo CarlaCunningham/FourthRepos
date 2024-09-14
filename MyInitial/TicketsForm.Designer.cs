@@ -32,12 +32,13 @@
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.lblAmountDue = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
-            this.chkDiscount = new System.Windows.Forms.CheckBox();
+            this.chkDiscounts = new System.Windows.Forms.CheckBox();
             this.radBalcony = new System.Windows.Forms.RadioButton();
             this.radGeneral = new System.Windows.Forms.RadioButton();
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.chkDiscountc = new System.Windows.Forms.CheckBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,15 +75,15 @@
             this.lblAmount.Size = new System.Drawing.Size(0, 13);
             this.lblAmount.TabIndex = 3;
             // 
-            // chkDiscount
+            // chkDiscounts
             // 
-            this.chkDiscount.AutoSize = true;
-            this.chkDiscount.Location = new System.Drawing.Point(111, 95);
-            this.chkDiscount.Name = "chkDiscount";
-            this.chkDiscount.Size = new System.Drawing.Size(104, 17);
-            this.chkDiscount.TabIndex = 5;
-            this.chkDiscount.Text = "Senior / Student";
-            this.chkDiscount.UseVisualStyleBackColor = true;
+            this.chkDiscounts.AutoSize = true;
+            this.chkDiscounts.Location = new System.Drawing.Point(111, 95);
+            this.chkDiscounts.Name = "chkDiscounts";
+            this.chkDiscounts.Size = new System.Drawing.Size(104, 17);
+            this.chkDiscounts.TabIndex = 5;
+            this.chkDiscounts.Text = "Senior / Student";
+            this.chkDiscounts.UseVisualStyleBackColor = true;
             // 
             // radBalcony
             // 
@@ -138,14 +139,25 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
+            // chkDiscountc
+            // 
+            this.chkDiscountc.AutoSize = true;
+            this.chkDiscountc.Location = new System.Drawing.Point(294, 95);
+            this.chkDiscountc.Name = "chkDiscountc";
+            this.chkDiscountc.Size = new System.Drawing.Size(49, 17);
+            this.chkDiscountc.TabIndex = 11;
+            this.chkDiscountc.Text = "Child";
+            this.chkDiscountc.UseVisualStyleBackColor = true;
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.chkDiscountc);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
-            this.Controls.Add(this.chkDiscount);
+            this.Controls.Add(this.chkDiscounts);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblAmountDue);
             this.Controls.Add(this.txtQuantity);
@@ -166,12 +178,13 @@
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label lblAmountDue;
         private System.Windows.Forms.Label lblAmount;
-        private System.Windows.Forms.CheckBox chkDiscount;
+        private System.Windows.Forms.CheckBox chkDiscounts;
         private System.Windows.Forms.RadioButton radBalcony;
         private System.Windows.Forms.RadioButton radGeneral;
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.CheckBox chkDiscountc;
     }
 }
 

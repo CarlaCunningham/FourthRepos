@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -16,7 +17,7 @@ namespace Ticketing
         const decimal mdecBalcony = 35.5m;
         const decimal mdecGeneral = 28.75m;
         const decimal mdecBox = 62.0m;
-        const decimal mdecDiscount = 5.0m; 
+        const decimal mdecDiscounts = 5.0m;
 
         private int Section
         {
@@ -67,7 +68,9 @@ namespace Ticketing
                  break;
          }
          if (discount)
-         { mPrice -= mdecDiscount; }
+         { mPrice -= mdecDiscounts;
+         
+            }
 
          AmountDue = mPrice * quantity;
 
